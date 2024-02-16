@@ -12,7 +12,7 @@ app.use(cors());
 app.use('/api/categorie',categorieRouter);
 app.use('/api/scategorie',scategorieRouter)
 app.use("/api/article",articleRouter);
-mongoose.connect(process.env.DATABASE)
+mongoose.connect(process.env.DATABASECLOUD)
 .then(()=>{console.log("Database Successfully Connected");})
 .catch((error)=>{console.log("Error Connecting to Database : ", error);
 process.exit();
